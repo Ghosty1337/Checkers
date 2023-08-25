@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2B2B2B;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    gap: 0.1px;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(8, auto);
+    width: 1600px;
+    height: 1600px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s;
+}
+
+.cell.white {
+    background-color: white;
+}
+
+.cell.black {
+    background-color: black;
+}
+
+.checker__inner {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.checker__inner.black {
+    background-color: #181818;
+    border: 1px solid #BAB9B9;
+}
+
+.checker__inner.white {
+    background-color: #C6C5C5;
+    border: 1px solid #DBD8D8;
+}
+
+.checker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.checker.white {
+    background-color: #F9F4F4;
+    border: 4px solid #C6C5C5;
+}
+
+.checker.black {
+    background-color: hsl(0, 0%, 17%);
+    border: 4px solid #BAB9B9; 
+}
+
+.selected {
+    box-shadow: inset 0 0 5px 10px #53A2FF;
+}
+
+.green {
+    box-shadow: inset 0 0 5px 10px #8CFF64;
+}
